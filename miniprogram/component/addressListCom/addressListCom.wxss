@@ -1,0 +1,15 @@
+.address-add-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.address-btn-group {
+  padding: 10rpx 30rpx 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 14px;
+  background: #fff;
+  color: #999;
+}
+.gutter {
+  margin-left: 20rpx;
+}

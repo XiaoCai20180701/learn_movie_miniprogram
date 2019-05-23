@@ -1,0 +1,31 @@
+<!--pages/classification/classification.wxml-->
+<view class='container'>
+  <!-- <text>pages/classification/classification.wxml</text> -->
+
+  <view class="nav-left">
+    <block wx:for="{{classifyItems}}" wx:key="{{inedx}}">
+       <!--当前项的id等于item项的id，那个就是当前状态-->
+       <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+        <view class="nav-left-items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</view>
+     </block>
+  </view>
+
+  <view class="nav-right clearfix">
+    <!--如果有数据，才遍历项-->
+    <block wx:if="{{classifyItems[curIndex].ishaveChild}}">
+      <van-row>
+        <van-col span="8" wx:for="{{classifyItems[curIndex].shopClassifyDtoList}}" wx:key="{{index}}">
+          <navigator url="/pages/classifyGoods/classifyGoods?classifyId={{item.id}}">
+            <image src="{{item.imgUrl}}" class='img' mode='apsectFit'/>
+            <view class='text'>{{item.name}}</view>
+          </navigator>
+        </van-col>
+      </van-row>
+    </block>
+
+    <!--如果无数据，则显示数据-->
+<!--     <block wx:else><view class="nodata-text">该分类暂无数据</view></block> -->
+  </view>
+
+</view>
+

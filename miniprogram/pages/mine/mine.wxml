@@ -1,0 +1,22 @@
+<!--pages/mine/mine.wxml-->
+<view class="avatar-layout">
+  <view class="headView">
+      <open-data type="userAvatarUrl" class="avatar-img" mode="aspectFit"></open-data>
+      <view class="avatar-img"></view>
+  </view>
+  <view class="avatar-name">
+    <open-data type="userNickName"></open-data>
+  </view>
+  <view class=''>
+    <van-cell title="我的订单" is-link icon="orders-o" >
+      <van-tag round type="danger">5</van-tag>
+    </van-cell>
+    <van-cell title="我的代金券" is-link icon="coupon-o" />
+    <van-cell title="我的拼团" is-link icon="shop-collect-o">
+      <van-tag round type="danger">1</van-tag>
+    </van-cell>
+    <van-cell title="收货地址管理" is-link icon="location-o" bindtap="gotoAddressList"/>
+    <van-cell title="联系客服" is-link icon="service-o" />
+    <van-cell title="常见问题" is-link icon="question-o" />
+  </view>
+</view>

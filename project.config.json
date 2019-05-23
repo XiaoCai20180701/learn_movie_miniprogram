@@ -41,12 +41,75 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cloud",
+					"pathName": "pages/cloud/cloud",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "classification",
+					"pathName": "pages/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addressList",
+					"pathName": "pages/addressList/addressList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addressAdd",
+					"pathName": "pages/addressAdd/addressAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "freeTax",
+					"pathName": "pages/freeTax/freeTax",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cart",
+					"pathName": "pages/cart/cart",
+					"scene": null
 				}
 			]
 		}

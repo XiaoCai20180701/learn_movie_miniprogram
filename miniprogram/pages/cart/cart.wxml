@@ -1,0 +1,15 @@
+<!--pages/cart/cart.wxml-->
+<view>
+  <block wx:for="{{cartList}}" wx:key="{{index}}" wx:for-item="item">
+    <van-panel title="{{item.name}}" desc="描述信息" status="状态" class="panel">
+      <block wx:for="{{item.list}}" wx:key="{{index}}" wx:for-item="a">
+          <view class='item'>
+            <van-checkbox value="{{checked}}" bindchange="changeChecked">
+              <image src="{{a.imgUrl}}" class="img"></image>
+              <text class='text'>{{a.title}}</text>
+            </van-checkbox>
+          </view>
+        </block>
+    </van-panel>
+  </block>
+</view>

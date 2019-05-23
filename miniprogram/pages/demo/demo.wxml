@@ -1,1 +1,19 @@
-<van-button type="primary"> 插入数据 </van-button>
+<view class='btn-gutter'>
+  <van-button type="primary" block bind:tap="insert"> 插入数据 </van-button>
+  <block>
+    <van-button type="primary" block bind:click="toggleActionsheet1">弹出 Actionsheet</van-button>
+
+    <van-actionsheet
+        show="{{ show1 }}"
+        actions="{{ actions }}"
+        bind:close="toggleActionsheet1"
+        bind:select="toggleActionsheet1"
+      />
+  </block>
+
+  <van-button type="primary" block bindtap="toggleActionsheet2">弹出</van-button>
+  <text wx:if="{{show2}}">显示</text>
+  <van-popup show="{{show2}}" position="bottom" >
+    
+  </van-popup>
+</view>

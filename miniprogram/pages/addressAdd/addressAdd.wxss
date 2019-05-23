@@ -1,0 +1,7 @@
+.address-add-btn {
+  width: 90%;
+  margin: 20rpx auto;
+}
+.address-add-btn button {
+  margin-top: 30rpx;
+}

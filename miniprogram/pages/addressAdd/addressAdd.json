@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index",
+    "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+    "van-switch-cell": "../../miniprogram_npm/vant-weapp/switch-cell/index",
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-field":"../../miniprogram_npm/vant-weapp/field/index",
+    "van-area":"../../miniprogram_npm/vant-weapp/area/index",
+    "van-popup": "../../miniprogram_npm/vant-weapp/popup/index"
+  },
+  "navigationBarTitleText": "新增地址"
+}

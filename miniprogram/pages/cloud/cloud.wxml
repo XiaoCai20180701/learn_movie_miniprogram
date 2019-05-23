@@ -1,0 +1,3 @@
+<view class='btn-gutter'>
+  <van-button type="primary" block bindtap='insertThemePicList'> 插入 - 极速免税主题馆图片list </van-button>
+</view>

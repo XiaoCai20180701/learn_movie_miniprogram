@@ -1,18 +1,60 @@
 // pages/demo/demo.js
+const db = wx.cloud.database();  //初始化云数据库
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    show1: false,
+    show2: false,
+    actions: []
+  },
+  insert: function() {
+    db.collection('user').add({
+      data: {
+        name: 'jerry',
+        age: 20
+      },
+      sucess: res => {
 
+      }
+    })
+  },
+  // 设置隐藏  在最外层page里改变了show的值，触发transition.js中show的observer函数，导致所有的动画执行
+  toggle(type) {
+    console.log('type',type)
+    console.log('show1-----before',this.data.show1)
+    this.setData({
+      [type]: !this.data[type]
+    });
+    console.log('show1-----after', this.data.show1)
   },
 
+  // 调用方法
+  toggleActionsheet1() {
+    console.log('toggle')
+    this.toggle('show1');
+  },
+  toggleActionsheet2() {
+    console.log('toggle2')
+  //  this.toggle('show2');
+  this.setData({
+    show2: true
+  })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      actions: [
+        { name: '选项' },
+        { name: '选项', subname: '禁用' },
+        { name: '选项', loading: true },
+        { name: '禁用选项', disabled: true }
+      ]
+    });
   },
 
   /**
@@ -62,5 +104,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
 })

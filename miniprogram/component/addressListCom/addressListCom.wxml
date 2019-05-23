@@ -1,0 +1,13 @@
+<view>
+  <van-cell-group wx:for="{{list}}" wx:key="{{index}}" >
+    <van-cell title="{{item.name}}" label="{{item.address}}" ></van-cell>
+    <view class="address-btn-group">
+      <text class="">编辑</text>
+      <text class="gutter">设为默认地址</text>
+    </view>
+  </van-cell-group>
+
+  <view class="address-add-btn">
+    <van-button type="danger" block bindtap="add">新增地址</van-button>
+  </view>
+</view>

@@ -1,1 +1,7 @@
 /* pages/demo/demo.wxss */
+.btn-gutter {
+  margin: 10px;
+}
+.btn-gutter button{
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,22 @@
+/* pages/freeTax/freeTax.wxss */
+swiper {
+  width: 100%;
+  height: 400rpx;
+}
+swiper image {
+  width: 812rpx;
+}
+.panel {
+  padding: 20rpx;
+}
+.title {
+  padding-left: 20rpx;
+  border-left: 10rpx solid #1296db;
+}
+.container image {
+  width: 48%;
+  height: 180rpx;
+}
+.container image:nth-child(odd) {
+  margin-right: 4%;
+}

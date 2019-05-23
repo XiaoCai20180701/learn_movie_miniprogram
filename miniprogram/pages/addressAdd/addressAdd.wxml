@@ -1,0 +1,62 @@
+<view>
+  <van-cell-group>
+    <van-field
+     value="{{username}}"
+      clearable
+      required
+      label="姓名"
+      placeholder="收货人姓名"
+      bindchange="getUserName"
+      error="{{error}}"
+    />
+    <van-field
+      value="{{tel}}"
+      clearable
+      required
+      label="电话"
+      placeholder="收货人手机号"
+      bindchange="getTel"
+      error="{{error}}"
+    />
+    <van-field
+      clearable
+      required
+      label="地区"
+      placeholder="选择省 / 市 / 区"
+      bindtap="showPopup"
+      value="{{address}}"
+      error="{{error}}"
+    >
+    </van-field>
+    <van-popup show="{{show}}" position="bottom" overlay="false">
+      <van-area
+            ref="area"
+            value="110000"
+            area-list="{{areaList}}"
+            bindchange="onChange"
+            bindconfirm="onConfirm"
+            bindcancel="onCancel"
+          />
+    </van-popup>
+    <van-field
+      value="{{addressDetail}}"
+      clearable
+      label="详细地址"
+      placeholder="街道门牌，楼层房间号等"
+      bindchange="getAddressDetail"
+    />
+    <van-field
+      value="{{code}}"
+      clearable
+      label="邮政编码"
+      placeholder="邮政编码"
+      bindchange="getCode"
+    />
+    <van-switch-cell title="设为默认收货地址" checked="{{checked}}" bindchange="changeAddress"></van-switch-cell>
+
+    <view class="address-add-btn">
+      <van-button type="danger" block bindtap="handleSave">保存</van-button>
+      <van-button type="default" block class="btn-mt" bindtap="handleCancel">取消</van-button>
+    </view>
+  </van-cell-group>
+</view>
