@@ -1,0 +1,28 @@
+.img {
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+  float: left;
+}
+.text {
+  float: left;
+  width: 500rpx;
+  color: #333;
+  font-size: 14px;
+  margin-left: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text.red {
+  color: red;
+}
+.text.classify {
+  width: auto;
+  margin-top: 8rpx;
+  margin-bottom: 8rpx;
+  padding: 4rpx;
+  background: #f7f7f7;
+  border-radius: 6rpx;
+  font-size: 10px;
+}

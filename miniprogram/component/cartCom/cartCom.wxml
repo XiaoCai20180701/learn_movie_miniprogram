@@ -1,0 +1,20 @@
+<van-row class='item'>
+  <van-col span="2"><checkbox value="{{obj.title}}" checked="{{obj.isChecked}}"/></van-col>
+  <van-col span="4"><image src="{{obj.imgUrl}}" class="img"></image></van-col>
+  <van-col span="16">
+    <text class='text'>{{obj.title}}</text>
+    <text class='text classify'>{{obj.classify}}</text>
+  </van-col>
+  <van-row span="24">
+    <van-col span="6"><text class='text red'>¥{{obj.price}}</text></van-col>
+    <van-col span="3">
+      <van-button type="primary" size="mini" catchtap="handleReduce" data-count="{{isFirst ? obj.count : count}}">-</van-button>
+    </van-col>
+    <van-col span="5">
+      <van-field value="{{isFirst ? obj.count : count}}" size="mini" bindchange="changeCount" catchtap="handleCount"></van-field>
+    </van-col>
+    <van-col span="3">
+      <van-button type="default" size="mini" catchtap="handleAdd" data-count="{{isFirst ? obj.count : count}}">+</van-button>
+    </van-col>           
+  </van-row> 
+</van-row>
