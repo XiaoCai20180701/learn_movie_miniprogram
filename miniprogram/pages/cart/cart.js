@@ -6,22 +6,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    checked: false,
-    cartList: data.cartList
+    cartList: data.cartList,
+    count: 1,
+    isFirst: true,
+    key:''
   },
-  changeChecked(e){
-    this.setData({
-      checked: e.detail
-    })
+  checkboxChange: function (e) {
+    console.log('checkbox发生change事件，携带value值为：', e)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log('list',data.cartList)
-    this.setData({
-      
-    })
   },
 
   /**

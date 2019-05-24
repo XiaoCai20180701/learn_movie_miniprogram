@@ -1,15 +1,35 @@
 <!--pages/cart/cart.wxml-->
 <view>
   <block wx:for="{{cartList}}" wx:key="{{index}}" wx:for-item="item">
-    <van-panel title="{{item.name}}" desc="描述信息" status="状态" class="panel">
-      <block wx:for="{{item.list}}" wx:key="{{index}}" wx:for-item="a">
-          <view class='item'>
-            <van-checkbox value="{{checked}}" bindchange="changeChecked">
-              <image src="{{a.imgUrl}}" class="img"></image>
+    <van-panel title="店铺：{{item.name}}" class="panel">
+      <checkbox-group bindchange="checkboxChange" class="checkbox-group">
+          <label class="checkbox" wx:for="{{item.list}}" wx:key="{{item}}" wx:for-item="a">
+          <cart-item obj="{{a}}"/>
+          <!-- <van-row class='item'>
+            <van-col span="2"><checkbox value="{{a.title}}" checked="{{a.isChecked}}"/></van-col>
+            <van-col span="4"><image src="{{a.imgUrl}}" class="img"></image></van-col>
+            <van-col span="16">
               <text class='text'>{{a.title}}</text>
-            </van-checkbox>
-          </view>
-        </block>
+              <text class='text classify'>{{a.classify}}</text>
+            </van-col>
+              <van-row span="24">
+                <van-col span="6"><text class='text red'>¥{{a.price}}</text></van-col>
+                <van-col span="3">
+                <van-button type="primary" size="mini" catchtap="handleReduce" data-count="{{isFirst ? a.count : count}}" data-uuid="{{a.uuid}}" >-</van-button></van-col>
+                <van-col span="5"><van-field value="{{isFirst ? a.count : count}}" size="mini" bindchange="changeCount" catchtap="handleCount"></van-field></van-col>
+                <van-col span="3"><van-button type="default" size="mini" catchtap="handleAdd" data-count="{{isFirst ? a.count : count}}">+</van-button></van-col>           
+              </van-row> 
+            </van-row> -->
+          </label>
+      </checkbox-group>
     </van-panel>
   </block>
+
+   <van-row class="calculate-panel">
+      <van-col span="14"><text class='text'>全选</text></van-col>
+      <van-col span="6"><text class='text'>合计:<text class='text red'>¥0</text></text></van-col>
+      <van-col span="4">
+        <van-button type="danger" size="small" round>结算</van-button>
+      </van-col>
+    </van-row>
 </view>

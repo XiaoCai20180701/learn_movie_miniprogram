@@ -1,12 +1,16 @@
 /* pages/cart/cart.wxss */
+.van-panel {
+  margin-bottom: 20rpx;
+}
+.calculate-panel {
+  position: fixed;
+  bottom: 0;
+  padding: 20rpx;
+  background-color: #fff;
+  box-shadow: 4rpx 4rpx 4rpx #333;
+}
 .item {
   padding: 20rpx;
-}
-.img {
-  width: 120rpx;
-  height: 120rpx;
-  vertical-align: middle;
-  float: left;
 }
 .text {
   float: left;
@@ -17,4 +21,19 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.text.red {
+  color: red;
+}
+.text.classify {
+  width: auto;
+  margin-top: 8rpx;
+  margin-bottom: 8rpx;
+  padding: 4rpx;
+  background: #f7f7f7;
+  border-radius: 6rpx;
+  font-size: 10px;
+}
+.checkbox-group {
+  padding-left: 30rpx;
 }
