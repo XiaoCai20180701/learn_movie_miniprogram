@@ -199,30 +199,52 @@ const cartList = [
     "name": "舒贝纳旗舰店",
     "list": [
       {
+        "uuid": 'df88a1dc-8777-4f59-9abe-a4eb2d59a0fe',
         "isChecked": true,
         "title": "韩版窄长条小丝带巾领巾 缠绑包包手柄发带丝巾头巾波点丝巾飘带",
+        "price": 8.55,
+        "classify": "15号",
+        "count": 1,
         "imgUrl": "https://img.alicdn.com/bao/uploaded/i3/2534426920/TB2ygpKfdfJ8KJjy0FeXXXKEXXa_!!2534426920.jpg_80x80.jpg"
       },
       {
+        "uuid": '039649a3-5efa-44cb-bec6-99df266206fd',
         "isChecked": false,
         "title": "2017韩版草帽女夏天沙滩帽子大蝴蝶结大檐可折叠防晒遮阳帽子",
+        "price": 12,
+        "classify": "米色，可调节",
+        "count": 8,
         "imgUrl": "https://img.alicdn.com/bao/uploaded/i4/129671338/TB2XsTXXu2CK1JjSZFjXXXk_VXa_!!129671338.jpg_80x80.jpg"
       }
     ]
   },
   {
-    "name": "舒贝纳旗舰店2",
+    "name": "无饰不欢",
     "list": [
       {
+        "uuid": 'f4023c58-50ab-4b3f-af25-803c0b6fab19',
         "isChecked": false,
-        "title": "韩版窄长条小丝带巾领巾 缠绑包包手柄发带丝巾头巾波点丝巾飘带",
-        "imgUrl": "https://img.alicdn.com/bao/uploaded/i3/2534426920/TB2ygpKfdfJ8KJjy0FeXXXKEXXa_!!2534426920.jpg_80x80.jpg"
-      },
-      {
-        "isChecked": false,
-        "title": "2017韩版草帽女夏天沙滩帽子大蝴蝶结大檐可折叠防晒遮阳帽子",
-        "imgUrl": "https://img.alicdn.com/bao/uploaded/i4/129671338/TB2XsTXXu2CK1JjSZFjXXXk_VXa_!!129671338.jpg_80x80.jpg"
+        "title": "职业阿玛施特西装外套胸针简约高档可爱胸花别针韩国珍珠配饰品女",
+        "price": 20,
+        "classify": "乳白色[1#]",
+        "count": 12,
+        "imgUrl": "https://img.alicdn.com/bao/uploaded/i4/3328960091/TB2zdPRe6ihSKJjy0FiXXcuiFXa_!!3328960091.jpg_80x80.jpg"
       }
+    ]
+  },
+  {
+    "name": "UU Lady 万太太定",
+    "list": [
+      {
+        "uuid":'5a984be4-a370-436e-b86a-58451d1d5a34',
+        "isChecked": false,
+        "title": "酒红色吊带冷淡风连衣裙女夏收腰显瘦中长款气质大摆复古小红裙女",
+        "price": 128,
+        "classify": "酒红色[W160长款]s码",
+        "count": 1,
+        "imgUrl": "https://img.alicdn.com/bao/uploaded/i1/187895484/TB2ZKzxzJ0opuFjSZFxXXaDNVXa_!!187895484.jpg_80x80.jpg"
+      },
+    
     ]
   }
 ]

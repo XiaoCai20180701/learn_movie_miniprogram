@@ -14,6 +14,12 @@
   <van-button type="primary" block bindtap="toggleActionsheet2">弹出</van-button>
   <text wx:if="{{show2}}">显示</text>
   <van-popup show="{{show2}}" position="bottom" >
-    
+    我是小菜
   </van-popup>
+
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{items}}">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </checkbox-group>
 </view>

@@ -1,5 +1,6 @@
 // pages/demo/demo.js
 const db = wx.cloud.database();  //初始化云数据库
+const query = wx.createSelectorQuery()
 Page({
 
   /**
@@ -8,7 +9,15 @@ Page({
   data: {
     show1: false,
     show2: false,
-    actions: []
+    actions: [],
+    items: [
+      { name: 'USA', value: '美国' },
+      { name: 'CHN', value: '中国', checked: 'true' },
+      { name: 'BRA', value: '巴西' },
+      { name: 'JPN', value: '日本' },
+      { name: 'ENG', value: '英国' },
+      { name: 'TUR', value: '法国' },
+    ]
   },
   insert: function() {
     db.collection('user').add({
@@ -43,6 +52,7 @@ Page({
     show2: true
   })
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */
